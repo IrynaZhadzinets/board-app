@@ -9,6 +9,7 @@ import { BoardComponent } from './board/board.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { CardListComponent } from './card-list/card-list.component';
 import { CardItemComponent } from './card-item/card-item.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CardItemComponent } from './card-item/card-item.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

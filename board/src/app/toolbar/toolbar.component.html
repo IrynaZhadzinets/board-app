@@ -1,1 +1,8 @@
-<p>toolbar works!</p>
+<mat-toolbar class="toolbar">
+  <form (submit)="onSearch()">
+    <mat-form-field>
+      <input matInput type="text" placeholder="Name">
+    </mat-form-field>
+    <button mat-raised-button type="button">Search</button>
+  </form>
+</mat-toolbar>

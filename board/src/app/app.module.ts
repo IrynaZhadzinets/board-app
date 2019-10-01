@@ -19,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
 import { FilterPipe } from './pipes/filter.pipe';
+import { CardColorDirective } from './directives/card-color.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     ToolbarComponent,
     CardListComponent,
     CardItemComponent,
-    FilterPipe
+    FilterPipe,
+    CardColorDirective
   ],
   imports: [
     BrowserModule,

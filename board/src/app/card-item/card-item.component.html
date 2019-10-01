@@ -1,4 +1,4 @@
-<mat-card class="cardItem" (click)="toggleDescription()">
+<mat-card class="cardItem" [appCardBackground]="card.dueDate" (click)="toggleDescription()">
   <p [class.isDone]="isDone">{{ card.name }}</p>
   <ng-content *ngIf="isOpen">
   </ng-content>

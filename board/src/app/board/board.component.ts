@@ -40,7 +40,7 @@ export class BoardComponent implements OnInit {
           id: '4',
           name: 'Task 2',
           description: 'Description 2',
-          dueDate: new Date().toISOString(),
+          dueDate: new Date('2019-09-27T03:24:00').toISOString(),
           assignee: {
             id: '5',
             firstName: 'Pet',
@@ -51,7 +51,7 @@ export class BoardComponent implements OnInit {
           id: '6',
           name: 'Task 3',
           description: 'Description 3',
-          dueDate: new Date().toISOString(),
+          dueDate: new Date('2018-12-17T03:24:00').toISOString(),
           assignee: {
             id: '7',
             firstName: 'Grisha',
@@ -109,7 +109,7 @@ export class BoardComponent implements OnInit {
           id: '1',
           name: 'Done 1',
           description: 'Description 1',
-          dueDate: new Date().toISOString(),
+          dueDate: new Date('2018-12-17T03:24:00').toISOString(),
           assignee: {
             id: '10',
             firstName: 'Bad',

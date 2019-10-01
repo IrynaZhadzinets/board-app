@@ -1,14 +1,12 @@
 <mat-toolbar class="toolbar">
-  <form (submit)="onSearch()">
-    <mat-form-field>
-      <input
-        matInput
-        type="text"
-        placeholder="Name"
-        [(ngModel)]="searchCriterion"
-        name="searchCriterion"
-      />
-    </mat-form-field>
-    <button mat-raised-button (click)="onSearch()">Search</button>
-  </form>
+  <mat-form-field>
+    <input
+      matInput
+      type="text"
+      placeholder="Name"
+      [(ngModel)]="searchCriterion"
+      name="searchCriterion"
+    />
+  </mat-form-field>
+  <button mat-raised-button (click)="onSearch()">Search</button>
 </mat-toolbar>

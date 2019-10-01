@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MatCardModule } from '@angular/material/card';
     BoardComponent,
     ToolbarComponent,
     CardListComponent,
-    CardItemComponent
+    CardItemComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

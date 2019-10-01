@@ -1,6 +1,6 @@
 <h2 class="nameList">{{ cardList.name }}</h2>
     <app-card-item
-      *ngFor="let card of cardList.cards"
+      *ngFor="let card of cardList.cards | filter:searchCriterion"
       [card]="card"
       [isDone]="cardList.isDoneSection"
     >

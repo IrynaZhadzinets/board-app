@@ -18,18 +18,8 @@ export class CardItemComponent implements OnInit {
   @Input() public isDone: boolean;
   @Output() public removeCard = new EventEmitter<Card>();
 
-  private dayInMilliseconds: number = 24 * 60 * 60 * 1000;
   public isOpen: boolean = false;
   public color: string;
-
-  ngOnChanges() {
-    const differenceOfMilliseconds = Date.now() - Date.parse(String(this.card.dueDate));
-    if (differenceOfMilliseconds < this.dayInMilliseconds * 3 && !this.isDone) {
-      this.color = 'red';
-    } else if (differenceOfMilliseconds < this.dayInMilliseconds * 7 && !this.isDone) {
-      this.color = 'yellow';
-    }
-  }
 
   public onRemove() {
     this.removeCard.emit(this.card);

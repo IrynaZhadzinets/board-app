@@ -12,7 +12,7 @@ export class ToolbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  public searchCriterion : string = "";
+  public searchCriterion : string = '';
 
   @Output()
   public search = new EventEmitter<string>();
@@ -20,5 +20,4 @@ export class ToolbarComponent implements OnInit {
   public onSearch() {
     this.search.emit(this.searchCriterion);
   }
-
 }

@@ -1,1 +1,23 @@
-<app-card-item></app-card-item>
+<div>
+    <h2>{{ cardList.name }}</h2>
+    <app-card-item
+      *ngFor="let card of cardList.cards"
+      [card]="card"
+      [isDone]="cardList.isDoneSection"
+    >
+      <div>
+          <div>
+              <p>{{ card.description }}</p>
+              <p>{{ card.dueDate | date:'medium' }}</p>
+              <p>{{ card.assignee.firstName + ' ' + card.assignee.lastName }}</p>
+          </div>
+          <div>
+              <button mat-raised-button color="primary">Edit</button>
+              <button mat-raised-button (click)="removeItem(card)">Remove</button>
+          </div>
+      </div>
+    </app-card-item>
+    <button mat-raised-button color="primary">
+      + create card
+    </button>
+  </div>

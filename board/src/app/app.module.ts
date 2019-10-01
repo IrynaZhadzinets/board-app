@@ -11,11 +11,13 @@ import { CardListComponent } from './card-list/card-list.component';
 import { CardItemComponent } from './card-item/card-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { FormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -31,11 +33,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatToolbarModule,
     MatButtonModule,
     MatInputModule,
     MatIconModule,
     MatFormFieldModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

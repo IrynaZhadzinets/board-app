@@ -1,1 +1,9 @@
-<app-card-list></app-card-list>
+<main class="board">
+  <app-card-list
+    *ngFor="let card of cardList"
+    [cardList]="card"
+    [searchCriterion]="searchCriterion"
+    (removeCard)="removeItem($event)"
+  >
+  </app-card-list>
+</main>

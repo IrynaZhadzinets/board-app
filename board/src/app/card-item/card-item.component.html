@@ -1,4 +1,4 @@
-<mat-card class="app-card" (click)="toggleDescription()">
+<mat-card class="cardItem" (click)="toggleDescription()">
   <p [class.isDone]="isDone">{{ card.name }}</p>
   <ng-content *ngIf="isOpen">
   </ng-content>

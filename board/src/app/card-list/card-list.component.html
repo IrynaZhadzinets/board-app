@@ -1,5 +1,4 @@
-<div>
-    <h2>{{ cardList.name }}</h2>
+<h2 class="nameList">{{ cardList.name }}</h2>
     <app-card-item
       *ngFor="let card of cardList.cards"
       [card]="card"
@@ -17,7 +16,6 @@
           </div>
       </div>
     </app-card-item>
-    <button mat-raised-button color="primary">
+    <button mat-raised-button color="primary" class="createCardButton">
       + create card
     </button>
-  </div>
